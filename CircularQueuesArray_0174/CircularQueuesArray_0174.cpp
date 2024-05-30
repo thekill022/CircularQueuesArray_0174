@@ -97,12 +97,23 @@ public :
             //jika FRONT <= REAR, Iterasi dari FRONT hingga REAR
             if (FRONT <= REAR)
             {
-                while (FRONT <= max - 1)
+                while (FRONT <= REAR)
                 {
                     cout << queue_array[FRONT] << " ";
                     FRONT++;
                 }
                 cout << endl;
+            }
+            else
+            {
+                //jika FRONT > REAR, iterasi dari FRONT hingga akhir array
+                while (FRONT <= max - 1)
+                {
+                    cout << queue_array[FRONT] << " ";
+                    FRONT++;
+                }
+
+                FRONT = 0;
             }
             
         }
