@@ -15,7 +15,8 @@ public :
     }
 
     //pembuatan prosedur insert untuk memasukkan nilai ke dalam queues
-    void insert() {
+    void insert() 
+    {
         int num;
         cout << "Enter a Number : ";
         cin >> num;
@@ -23,7 +24,7 @@ public :
 
 
         //cek apakah antrian penuh
-        if ((FRONT == 0 && REAR == max) || (FRONT == REAR + 1))
+        if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1))
         {
             cout << "\nQueue overflow\n";
             return;
@@ -38,21 +39,22 @@ public :
         else
         {
             //jika REAR berada di posisi terakhir array, kembali ke awal array
-            if (REAR = max - 1)
-            {
+            if (REAR == max - 1)
+            
                 REAR = 0;
-            }
+            
             else
-            {
+            
                 REAR = REAR + 1;
-            }
+            
         }
         //memasukkan nilai ke array index ke REAR
         queue_array[REAR] = num;
     }
 
     //membuat prosedur remove untuk menghapus element dari queues
-    void remove() {
+    void remove() 
+    {
 
         //cek apakah antrian kosong
         if (FRONT == -1)
