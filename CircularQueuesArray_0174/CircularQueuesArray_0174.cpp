@@ -55,7 +55,7 @@ public :
     void remove() {
 
         //cek apakah antrian kosong
-        if (FRONT == -1) 
+        if (FRONT == -1)
         {
             cout << "Queue underflow\n";
             return;
@@ -72,7 +72,7 @@ public :
         else
         {
             //jika posisi element yang di hapus berada di posisi terakhir array, kembali ke awal array
-            if (FRONT == max -1)
+            if (FRONT == max - 1)
             {
                 FRONT = 0;
             }
@@ -81,8 +81,19 @@ public :
                 FRONT = FRONT + 1;
             }
         }
-
     }
+
+        //membuat prosedur diplay untuk menampilkan element queue
+        void display() {
+            //cek apakah antrian kosong 
+            if (FRONT == -1)
+            {
+                cout << "Queue is Empty\n";
+                return;
+            }
+        }
+
+    
 
 };
 
