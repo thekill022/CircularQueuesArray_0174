@@ -51,6 +51,11 @@ public :
         queue_array[REAR] = num;
     }
 
+    //membuat prosedur remove untuk menghapus element dari queues
+    void remove() {
+
+    }
+
 };
 
 int main()
