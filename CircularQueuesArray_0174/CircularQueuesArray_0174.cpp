@@ -55,11 +55,13 @@ public :
     void remove() {
 
         //cek apakah antrian kosong
-        if (FRONT = -1) 
+        if (FRONT == -1) 
         {
             cout << "Queue underflow\n";
             return;
         }
+        //display untuk menampilkan element yang di delete dari queue
+        cout << "\nThe element delete from queue is : " << queue_array[FRONT] << "\n";
 
     }
 
