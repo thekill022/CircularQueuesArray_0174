@@ -137,7 +137,21 @@ int main()
     //membuat perulangan while untuk menjalankan program queue
     while (true)
     {
+        try
+        {
+            //membuat menu queue
+            cout << "Menu" << endl;
+            cout << "1. Implementasi Operasi Insert" << endl;
+            cout << "2. Implementasi Operasi Delete" << endl;
+            cout << "3. Display Nilai Queue" << endl;
+            cout << "4. Exit" << endl;
+            cin >> ch;
+            cout << endl;
+        }
+        catch (const exception&)
+        {
 
+        }
     }
 
 }
