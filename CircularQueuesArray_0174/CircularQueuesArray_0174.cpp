@@ -5,6 +5,7 @@ using namespace std;
 class Queues {
     //deklarasi variabel front, rear, dan max, dengan nilai max = 5
     int FRONT, REAR, max = 5;
+    int queue_array[5]; //membuat array untuk menampung queues
 
 public :
     //set value front dan rear = -1
@@ -47,6 +48,7 @@ public :
             REAR = REAR + 1;
         }
     }
+
 
 };
 
