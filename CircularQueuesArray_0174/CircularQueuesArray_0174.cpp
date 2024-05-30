@@ -63,6 +63,13 @@ public :
         //display untuk menampilkan element yang di delete dari queue
         cout << "\nThe element delete from queue is : " << queue_array[FRONT] << "\n";
 
+        //cek jika antrian hanya memiliki satu element
+        if (FRONT == REAR)
+        {
+            FRONT = -1;
+            REAR = -1;
+        }
+
     }
 
 };
