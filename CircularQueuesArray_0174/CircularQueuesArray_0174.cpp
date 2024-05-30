@@ -149,22 +149,23 @@ int main()
             cout << "2. Implementasi Operasi Delete" << endl;
             cout << "3. Display Nilai Queue" << endl;
             cout << "4. Exit" << endl;
+            cout << "Masukkan Pilihan (1-4) : ";
             cin >> ch;
             cout << endl;
 
             //kondisi yang terjadi sesuai nilai input ch
             switch (ch)
             {
-            case 1 :
+            case '1' :
                 q.insert();
                 break;
-            case 2 :
+            case '2' :
                 q.remove();
                 break;
-            case 3 :
+            case '3' :
                 q.display();
                 break;
-            case 4 :
+            case '4' :
                 return 0;
             default:
                 cout << "Invalid option!" << endl;
