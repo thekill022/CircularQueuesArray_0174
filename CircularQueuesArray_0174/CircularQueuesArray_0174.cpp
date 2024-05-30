@@ -13,6 +13,14 @@ public :
         REAR = -1;
     }
 
+    //pembuatan prosedur insert untuk memasukkan nilai ke dalam queues
+    void insert() {
+        int num;
+        cout << "Enter a Number : ";
+        cin >> num;
+        cout << endl;
+    }
+
 };
 
 int main()
