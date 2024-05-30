@@ -134,4 +134,10 @@ int main()
     Queues q;
     char ch;
 
+    //membuat perulangan while untuk menjalankan program queue
+    while (true)
+    {
+
+    }
+
 }
