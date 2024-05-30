@@ -76,6 +76,10 @@ public :
             {
                 FRONT = 0;
             }
+            else //jika tidak increment FRONT + 1
+            {
+                FRONT = FRONT + 1;
+            }
         }
 
     }
