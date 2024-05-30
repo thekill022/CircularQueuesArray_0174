@@ -121,15 +121,17 @@ public :
                     cout << queue_array[FRONT] << " ";
                     FRONT++;
                 }
+                cout << endl;
             }
             
-        }
-
-    
+        } 
 
 };
 
 int main()
 {
-    
+    //deklarasi objek q dan variabel ch
+    Queues q;
+    char ch;
+
 }
